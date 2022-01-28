@@ -1,5 +1,5 @@
 inc = Number(prompt("Введите шаг"));
-function customCounter() {
+function customCounter(inc) {
   let i = 0;
 
   return function () {
@@ -7,7 +7,7 @@ function customCounter() {
   };
 }
 
-const counter1 = customCounter(5);
+const counter1 = customCounter(inc);
 console.log(
   "counter1() :>> ",
   counter1()
